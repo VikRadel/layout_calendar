@@ -34,16 +34,16 @@ html {
               transform: translateY(-20px);
       background-color: pink; }
 
-.calendar-28 > :nth-child(29) {
+.calendar-28 > div:nth-child(n+29) {
   display: none; }
 
-.calendar-29 > :nth-child(30) {
+.calendar-29 > div:nth-child(n+30) {
   display: none; }
 
-.calendar-30 > :nth-child(31) {
+.calendar-30 > div:nth-child(n+31) {
   display: none; }
 
-.calendar-31 > :nth-child(32) {
+.calendar-31 > div:nth-child(n+32) {
   display: none; }
 
 .calendar div:nth-child(1)::after {
