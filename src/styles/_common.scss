@@ -35,22 +35,22 @@ html {
   }
 }
 
-@for $day from 28 through 31 {
-  .calendar-#{$day} > :nth-child(#{$day + 1}) {
+@for $i from 28 through 31 {
+  .calendar-#{$i} > div:nth-child(n+#{$i + 1}) {
     display: none;
   }
 }
 
-@for $day from 1 through 31 {
+@for $i from 1 through 31 {
   .calendar {
-    div:nth-child(#{$day})::after {
-      content: "#{$day}";
+    div:nth-child(#{$i})::after {
+      content: "#{$i}";
     }
   }
 }
 
-@for $day from 0 through 6 {
-  .calendar-#{nth($days, $day+1)} div:first-child {
-    margin-left: $day * 101px;
+@for $i from 0 through 6 {
+  .calendar-#{nth($days, $i+1)} div:first-child {
+    margin-left: $i * 101px;
   }
 }
